@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function copy_base_file {
   FILENAME="$1"
@@ -11,9 +11,8 @@ function copy_base_file {
   fi
 }
 
-copy_base_file server.cfg
 copy_base_file jampgamei386.so
+copy_base_file server.cfg
 
 chmod a+rwx /usr/local/games/ja/base/jampgamei386.so
-
 ./linuxjampded +set net_port "29070" +exec server.cfg

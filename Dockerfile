@@ -6,9 +6,10 @@ WORKDIR /tmp
 COPY jalinuxded_1011.zip jalinuxded_1011.zip
 RUN unzip -d jedi_academy/ jalinuxded_1011.zip
 
-FROM ubuntu:artful
+FROM debian:9-slim
 MAINTAINER McAfee
 
+# requires the lib32 libraries
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y lib32stdc++6 && \
   rm -rf /var/lib/apt/lists/*
@@ -16,8 +17,6 @@ RUN apt-get update && \
 RUN mkdir -p /files && \
   mkdir -p /usr/local/games/ja/ && \
   ln -s /files /usr/local/games/ja/base
-
-# RUN apk add --no-cache lib32stdc++6
 
 # main program
 COPY --from=0 /tmp/jedi_academy/libcxa.so.1 /usr/lib/libcxa.so.1

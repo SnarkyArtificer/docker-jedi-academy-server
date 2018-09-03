@@ -23,10 +23,10 @@ This guide assumes you understand basic Docker principles
 4. Once the container is running, connect by host IP
 
 ## Possible Future plans
-Officially support any mods that need other config (likely already possible with correct file mounting)
+1. Officially support any mods that need other config (likely already possible with correct file mounting)
 
 ## Known issues
-Lightsabers will sometimes have rainbow colored shadows for a currently unknown reason.  Does not functionally change the game, just looks stupid.  A restart of the container often fixes this.
+1. Lightsabers will sometimes have rainbow colored shadows for a currently unknown reason.  Does not functionally change the game, just looks stupid.  A restart of the container often fixes this.
 
 ## Links
 

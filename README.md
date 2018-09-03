@@ -29,6 +29,5 @@ This guide assumes you understand basic Docker principles
 1. Lightsabers will sometimes have rainbow colored shadows for a currently unknown reason.  Does not functionally change the game, just looks stupid.  A restart of the container often fixes this.
 
 ## Links
-
-Github Repository: https://github.com/SnarkyArtificer/docker-jedi-academy-server
-Docker repository: https://hub.docker.com/r/snarkyartificer/jedi-academy-server
+* Github Repository: https://github.com/SnarkyArtificer/docker-jedi-academy-server
+* Docker repository: https://hub.docker.com/r/snarkyartificer/jedi-academy-server

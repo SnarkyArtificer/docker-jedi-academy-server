@@ -1,1 +1,4 @@
 .DS_Store
+*.pk3
+*.so
+*.cfg
